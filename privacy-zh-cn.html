@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>隐私权政策｜辰玣堂</title>
+<style>
+  :root{
+    --bg:#faf7f2; --card:#fff; --text:#2b2723; --muted:#6b6259;
+    --accent:#8a6d3b; --line:#e6ddd0;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#171513; --card:#201d1a; --text:#ece7e0; --muted:#a89d90;
+           --accent:#cfae6d; --line:#332e29; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;padding:0;background:var(--bg);color:var(--text);
+       font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Helvetica Neue",sans-serif;
+       line-height:1.85;font-size:16px;-webkit-text-size-adjust:100%}
+  .wrap{max-width:820px;margin:0 auto;padding:32px 20px 80px}
+  .langbar{text-align:center;font-size:13px;color:var(--muted);margin-bottom:8px}
+  .langbar a{color:var(--muted);text-decoration:none;padding:0 4px}
+  .langbar a:hover{color:var(--accent);text-decoration:underline}
+  .langbar strong{color:var(--accent);padding:0 4px}
+  header{text-align:center;padding:28px 0 20px;border-bottom:2px solid var(--accent)}
+  header h1{margin:0 0 8px;font-size:28px;letter-spacing:2px}
+  header .sub{color:var(--muted);font-size:14px}
+  .meta{background:var(--card);border:1px solid var(--line);border-radius:12px;
+        padding:14px 18px;margin:24px 0;font-size:14px;color:var(--muted)}
+  h2{font-size:20px;margin:38px 0 12px;padding-left:12px;border-left:4px solid var(--accent)}
+  h3{font-size:17px;margin:24px 0 8px;color:var(--accent)}
+  p{margin:10px 0}
+  ul,ol{padding-left:22px;margin:10px 0}
+  li{margin:6px 0}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;
+        background:var(--card);border-radius:10px;overflow:hidden}
+  th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+  th{background:rgba(138,109,59,.12);font-weight:700}
+  .note{background:var(--card);border-left:4px solid var(--accent);
+        padding:14px 18px;margin:18px 0;border-radius:0 10px 10px 0;font-size:15px}
+  .warn{border-left-color:#c0392b}
+  a{color:var(--accent)}
+  footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);
+         text-align:center;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="langbar">
+  🌐 <a href="privacy.html">繁體中文</a>
+  <strong>简体中文</strong>
+  <a href="privacy-en.html">English</a>
+  <a href="privacy-ja.html">日本語</a>
+  <a href="privacy-ko.html">한국어</a>
+  <a href="privacy-vi.html">Tiếng Việt</a>
+</div>
+
+<header>
+  <h1>隐私权政策</h1>
+  <div class="sub">辰玣堂 ChenJiTang · 命理师专业客户管理系统</div>
+</header>
+
+<div class="meta">
+  <strong>生效日期：</strong>2026 年 8 月 1 日<br>
+  <strong>最后更新：</strong>2026 年 9 月 19 日<br>
+  <strong>适用范围：</strong>「辰玣堂」iOS 应用程序（以下称「本 App」）及其相关服务
+</div>
+
+<p>感谢您使用辰玣堂。我们深知命理数据属于高度个人化的信息，因此在设计本 App 时即采取「数据尽量留在您的设备上」的原则。本政策说明我们收集哪些数据、如何使用、与谁分享，以及您拥有哪些权利。</p>
+
+<h2>一、我们收集哪些数据</h2>
+
+<h3>1.1 您主动提供的数据</h3>
+<table>
+  <tr><th>数据类型</th><th>内容</th><th>存储位置</th></tr>
+  <tr>
+    <td>账号数据</td>
+    <td>电子邮件地址、显示名称</td>
+    <td>云端（Firebase）</td>
+  </tr>
+  <tr>
+    <td>命例数据</td>
+    <td>姓名、性别、出生年月日时、出生地、婚姻状况、职业、个人备注与生命纪事</td>
+    <td><strong>仅存储于您的设备本机</strong></td>
+  </tr>
+  <tr>
+    <td>AI 咨询内容</td>
+    <td>您输入的提问文字、选择的主题与情境选项</td>
+    <td>传送至服务器处理，回复结果存储于您的设备本机</td>
+  </tr>
+</table>
+
+<div class="note">
+  <strong>重要：</strong>您建立的命盘数据（含出生时间等敏感信息）默认<strong>只存储在您的手机里</strong>，不会自动上传云端。只有在您主动使用「AI 命理咨询」功能时，该次推算所需的命盘数据才会传送至服务器进行运算。
+</div>
+
+<h3>1.2 系统自动收集的数据</h3>
+<ul>
+  <li><strong>用户识别码（UID）：</strong>由 Firebase 于注册时自动产生，用于辨识您的账号与权益。</li>
+  <li><strong>设备识别码：</strong>Apple 提供的「供应商识别码」（identifierForVendor）与 App 自行产生之本机设备代号，用于防止服务滥用；订阅版账号另会用于实现「手机／平板各限一台设备登录」之权益保护机制（见下方说明）。此识别码在您删除 App 后即失效。</li>
+  <li><strong>使用行为分析：</strong>我们使用 Firebase Analytics 记录如登录、注册、购买、AI 功能使用、命例保存等操作事件与所属功能名称，用于了解整体使用情形、改善产品体验。<strong>此类事件不包含您的命例内容、AI 提问文字或 AI 回复全文。</strong></li>
+  <li><strong>服务使用记录：</strong>AI 咨询的次数、主题分类、使用的运算量与时间戳。<strong>不包含您的提问内容与 AI 回复全文。</strong></li>
+  <li><strong>购买记录：</strong>Apple 交易编号、商品代码、购买时间，用于发放与恢复您的权益。</li>
+</ul>
+
+<h3>1.3 我们不收集的数据</h3>
+<ul>
+  <li>本 App <strong>未启用</strong>任何第三方广告或行为追踪 SDK，不会用于投放广告。</li>
+  <li>我们<strong>不会</strong>收集您的通讯录、位置定位、健康数据或相册内容（相机与相册权限仅于您主动扫描或保存 QR Code 时即时使用，不会保留副本）。</li>
+  <li>Face ID／Touch ID 的生物特征数据由 iOS 系统管理，<strong>永远不会</strong>传送给我们或离开您的设备。</li>
+  <li>我们<strong>不会</strong>存储您的登录密码明文，密码由 Firebase Authentication 以加密方式管理。</li>
+</ul>
+
+<h2>二、我们如何使用这些数据</h2>
+<ul>
+  <li><strong>提供服务：</strong>进行命盘排算、AI 命理分析、保存您的购买权益。</li>
+  <li><strong>账号管理：</strong>验证身份、发送邮箱验证信与密码重设信。</li>
+  <li><strong>交易处理：</strong>确认 Apple 付款结果并发放对应权益，处理「恢复购买」需求。</li>
+  <li><strong>防止滥用：</strong>订阅版「手机／平板各限一台设备登录」保护、每日使用额度管控、防止重复发货。</li>
+  <li><strong>服务运维与产品改善：</strong>通过使用行为分析统计整体用量，规划系统容量与成本，了解功能使用情形。</li>
+</ul>
+<p>我们<strong>不会</strong>将您的个人数据用于广告投放，也<strong>不会</strong>出售、出租或交换您的个人数据给任何第三方。</p>
+
+<h2>三、数据如何分享与跨境传输</h2>
+<p>为提供服务，我们委托下列服务商处理部分数据：</p>
+
+<table>
+  <tr><th>服务商</th><th>用途</th><th>接触到的数据</th><th>数据所在地</th></tr>
+  <tr>
+    <td>Google（Firebase / Google Cloud）</td>
+    <td>账号验证、数据库、服务器运算、使用行为分析</td>
+    <td>电子邮件、显示名称、UID、权益状态、使用记录、行为分析事件</td>
+    <td>台湾（asia-east1）</td>
+  </tr>
+  <tr>
+    <td>Anthropic PBC（Claude AI 模型）</td>
+    <td>AI 命理分析生成</td>
+    <td>该次推算的命盘数据、您的提问内容</td>
+    <td>美国</td>
+  </tr>
+  <tr>
+    <td>Apple Inc.</td>
+    <td>App 内购买、Apple 登录</td>
+    <td>交易记录；Apple 登录者的匿名邮箱</td>
+    <td>依 Apple 政策</td>
+  </tr>
+</table>
+
+<div class="note">
+  <strong>关于跨境传输：</strong>当您使用 AI 咨询功能时，该次推算所需的命盘数据会传送至位于美国、由 Anthropic PBC 提供之 Claude AI 模型进行运算。此传输采用 HTTPS 加密。依 Anthropic 之 API 使用政策，通过 API 传送的数据<strong>不会被用于训练其 AI 模型</strong>。若您不希望数据跨境传输，可选择不使用 AI 咨询功能，本 App 的排盘与客户管理功能仍可正常使用。
+</div>
+
+<p>此外，在下列情形我们可能披露您的数据：</p>
+<ul>
+  <li>依法院命令、法律规定或主管机关要求。</li>
+  <li>为保护本服务、用户或第三人之权利、财产或安全所必要。</li>
+  <li>经您事前明确同意。</li>
+</ul>
+
+<h2>四、数据保存期间</h2>
+<ul>
+  <li><strong>账号与权益数据：</strong>保存至您删除账号为止。</li>
+  <li><strong>咨询会话记录：</strong>仅保存互动次数与时间戳，不保存对话内容。</li>
+  <li><strong>用量与交易记录：</strong>基于账务与税务需要，保存 5 年。</li>
+  <li><strong>本机命例数据：</strong>由您完全掌控，删除 App 即一并移除。</li>
+</ul>
+
+<h2>五、数据安全措施</h2>
+<ul>
+  <li>所有网络传输皆采用 HTTPS／TLS 加密。</li>
+  <li>命例数据于设备端以 iOS 文件保护机制加密存储。</li>
+  <li>导出的备份文件采用 AES-GCM 加密，<strong>需要您自行设定的密码</strong>才能解开；<span class="warn">此密码我们无从得知，遗失将无法救回，请妥善保存。</span></li>
+  <li>权益与代币的变更仅能由服务器端执行，防止篡改。</li>
+  <li>登录凭证存储于 iOS 系统钥匙串（Keychain）。</li>
+</ul>
+
+<h2>六、您的权利</h2>
+<p>依台湾《个人资料保护法》、香港《个人资料（私隱）条例》、澳门《个人资料保护法》、新加坡《个人资料保护法令》（PDPA）及马来西亚《个人资料保护法令》（PDPA），您就个人数据享有下列权利：</p>
+<ul>
+  <li><strong>查询与阅览：</strong>于 App 内「会员中心」即可查看您的账号数据与权益状态。</li>
+  <li><strong>更正：</strong>显示名称可于「会员中心」自行修改。</li>
+  <li><strong>删除：</strong>于「会员中心」点选「删除账号」，即可永久移除您的账号与云端数据。此操作不可恢复。</li>
+  <li><strong>副本取得：</strong>可使用 App 内的「导出备份」功能取得您的命例数据。</li>
+  <li><strong>停止收集与利用：</strong>您可停止使用本服务并删除账号。</li>
+</ul>
+<p>如需行使上述权利或有任何疑问，请通过本页下方的联系方式与我们联系。</p>
+
+<h2>七、儿童隐私</h2>
+<p>本服务不以未满 13 岁之儿童为对象，我们不会在知情的情况下收集其个人数据。未成年人使用本服务应取得法定代理人之同意。若您发现未成年人未经同意向我们提供了个人数据，请立即联系我们，我们将尽速删除。</p>
+
+<h2>八、本政策之修订</h2>
+<p>我们可能因法规变更或服务调整而修订本政策。修订后将更新本页的「最后更新」日期；如有重大变更，我们将于 App 内以显著方式通知您。</p>
+
+<h2>九、联系我们</h2>
+<p>若您对本隐私权政策有任何疑问、意见或需要行使个资权利，欢迎通过以下方式联系：</p>
+<ul>
+  <li><strong>电子邮件：</strong><a href="mailto:ziweilife168@gmail.com">ziweilife168@gmail.com</a></li>
+  <li><strong>服务名称：</strong>辰玣堂 ChenJiTang</li>
+</ul>
+<p>我们将于收到您的请求后 5 个工作日内回复。</p>
+
+<footer>
+  © 2026 辰玣堂 ChenJiTang. All rights reserved.<br>
+  <a href="terms-zh-cn.html">服务条款</a> · <a href="support-zh-cn.html">支持与客服</a>
+</footer>
+
+</div>
+</body>
+</html>
+
