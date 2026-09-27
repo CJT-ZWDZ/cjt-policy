@@ -64,7 +64,7 @@
 <div class="meta">
   <strong>Ngày hiệu lực:</strong> 1 tháng 8 năm 2026<br>
   <strong>Cập nhật lần cuối:</strong> 19 tháng 9 năm 2026<br>
-  <strong>Phạm vi áp dụng:</strong> Ứng dụng iOS "ChenJiTang" (sau đây gọi là "Ứng dụng") và các dịch vụ liên quan
+  <strong>Phạm vi áp dụng:</strong> Ứng dụng iOS và Android "ChenJiTang" (sau đây gọi là "Ứng dụng") và các dịch vụ liên quan
 </div>
 
 <p>Cảm ơn bạn đã sử dụng ChenJiTang. Chúng tôi hiểu rằng dữ liệu mệnh lý mang tính cá nhân rất cao, vì vậy Ứng dụng được thiết kế theo nguyên tắc "giữ dữ liệu trên thiết bị của bạn càng nhiều càng tốt". Chính sách này giải thích chúng tôi thu thập dữ liệu gì, sử dụng như thế nào, chia sẻ với ai, và bạn có những quyền gì.</p>
@@ -98,7 +98,7 @@
 <h3>1.2 Dữ liệu được thu thập tự động</h3>
 <ul>
   <li><strong>Mã định danh người dùng (UID):</strong> Do Firebase tự động tạo khi đăng ký, dùng để nhận diện tài khoản và quyền lợi của bạn.</li>
-  <li><strong>Mã định danh thiết bị:</strong> "Mã định danh nhà cung cấp" (identifierForVendor) do Apple cung cấp và mã thiết bị cục bộ do Ứng dụng tự tạo, dùng để ngăn chặn lạm dụng dịch vụ; đối với tài khoản đang đăng ký gói, mã này còn được dùng để thực hiện cơ chế giới hạn "mỗi loại thiết bị chỉ đăng nhập một máy" nêu bên dưới. Mã định danh này sẽ mất hiệu lực sau khi bạn xóa Ứng dụng.</li>
+  <li><strong>Mã định danh thiết bị:</strong> trên iOS là "Mã định danh nhà cung cấp" (identifierForVendor) do Apple cung cấp, trên Android là mã định danh thiết bị của hệ thống, cùng với mã thiết bị cục bộ do Ứng dụng tự tạo, dùng để ngăn chặn lạm dụng dịch vụ; đối với tài khoản đang đăng ký gói, mã này còn được dùng để thực hiện cơ chế giới hạn "mỗi loại thiết bị chỉ đăng nhập một máy" nêu bên dưới. Mã định danh này sẽ mất hiệu lực sau khi bạn xóa Ứng dụng.</li>
   <li><strong>Phân tích hành vi sử dụng:</strong> Chúng tôi sử dụng Firebase Analytics để ghi lại các sự kiện thao tác như đăng nhập, đăng ký, mua hàng, sử dụng tính năng AI, lưu hồ sơ mệnh cùng tên tính năng liên quan, nhằm hiểu tình hình sử dụng tổng thể và cải thiện trải nghiệm sản phẩm. <strong>Các sự kiện này không bao gồm nội dung hồ sơ mệnh, nội dung câu hỏi AI hoặc toàn văn phản hồi của AI.</strong></li>
   <li><strong>Nhật ký sử dụng dịch vụ:</strong> Số lần tư vấn AI, phân loại chủ đề, khối lượng tính toán và dấu thời gian. <strong>Không bao gồm nội dung câu hỏi của bạn hoặc toàn văn phản hồi AI.</strong></li>
   <li><strong>Lịch sử mua hàng:</strong> Mã giao dịch Apple, mã sản phẩm, thời gian mua, dùng để cấp phát và khôi phục quyền lợi của bạn.</li>
@@ -108,7 +108,7 @@
 <ul>
   <li>Ứng dụng <strong>không sử dụng</strong> bất kỳ SDK quảng cáo hoặc theo dõi hành vi của bên thứ ba nào, và không được dùng để hiển thị quảng cáo.</li>
   <li>Chúng tôi <strong>không thu thập</strong> danh bạ, vị trí định vị, dữ liệu sức khỏe hoặc nội dung thư viện ảnh của bạn (quyền truy cập camera/thư viện ảnh chỉ được sử dụng tức thời khi bạn chủ động quét hoặc lưu mã QR, không giữ lại bản sao).</li>
-  <li>Dữ liệu sinh trắc học Face ID/Touch ID do hệ thống iOS quản lý, <strong>không bao giờ</strong> được gửi cho chúng tôi hoặc rời khỏi thiết bị của bạn.</li>
+  <li>Dữ liệu sinh trắc học (Face ID/Touch ID trên iOS, vân tay/nhận diện khuôn mặt trên Android) do hệ điều hành quản lý, <strong>không bao giờ</strong> được gửi cho chúng tôi hoặc rời khỏi thiết bị của bạn.</li>
   <li>Chúng tôi <strong>không bao giờ</strong> lưu trữ mật khẩu đăng nhập của bạn dưới dạng văn bản thuần; mật khẩu được Firebase Authentication quản lý dưới dạng mã hóa.</li>
 </ul>
 
@@ -140,10 +140,16 @@
     <td>Hoa Kỳ</td>
   </tr>
   <tr>
-    <td>Apple Inc.</td>
+    <td>Apple Inc. (iOS)</td>
     <td>Mua hàng trong ứng dụng, Đăng nhập bằng Apple</td>
     <td>Lịch sử giao dịch; email ẩn danh khi đăng nhập bằng Apple</td>
     <td>Theo chính sách của Apple</td>
+  </tr>
+  <tr>
+    <td>Google Play (Android)</td>
+    <td>Mua hàng trong ứng dụng</td>
+    <td>Lịch sử giao dịch</td>
+    <td>Theo chính sách của Google</td>
   </tr>
 </table>
 
@@ -169,10 +175,10 @@
 <h2>Điều 5. Biện pháp bảo mật</h2>
 <ul>
   <li>Mọi hoạt động truyền dữ liệu qua mạng đều được mã hóa bằng HTTPS/TLS.</li>
-  <li>Dữ liệu hồ sơ mệnh được mã hóa lưu trữ trên thiết bị bằng cơ chế bảo vệ tệp của iOS.</li>
+  <li>Dữ liệu hồ sơ mệnh được mã hóa lưu trữ trên thiết bị (trên iOS bằng cơ chế bảo vệ tệp của hệ thống, trên Android bằng cơ chế lưu trữ mã hóa dựa trên Android Keystore).</li>
   <li>Tệp sao lưu xuất ra được mã hóa bằng AES-GCM, chỉ có thể mở bằng <strong>mật khẩu do chính bạn thiết lập</strong>; <span class="warn">chúng tôi không có cách nào biết được mật khẩu này, nếu làm mất sẽ không thể khôi phục, vui lòng bảo quản cẩn thận.</span></li>
   <li>Việc thay đổi quyền lợi và số lượt sử dụng chỉ có thể thực hiện từ phía máy chủ, ngăn chặn việc giả mạo.</li>
-  <li>Thông tin đăng nhập được lưu trữ trong Keychain của hệ thống iOS.</li>
+  <li>Thông tin đăng nhập được lưu trữ trong Keychain của hệ thống iOS (trên Android là cơ chế lưu trữ an toàn tương đương dựa trên Android Keystore).</li>
 </ul>
 
 <h2>Điều 6. Quyền của bạn</h2>
@@ -180,7 +186,7 @@
 <ul>
   <li><strong>Truy cập và xem:</strong> xem dữ liệu tài khoản và trạng thái quyền lợi tại "Trung tâm hội viên" trong Ứng dụng.</li>
   <li><strong>Chỉnh sửa:</strong> tên hiển thị có thể tự chỉnh sửa tại "Trung tâm hội viên".</li>
-  <li><strong>Xóa:</strong> chọn "Xóa tài khoản" tại "Trung tâm hội viên" để xóa vĩnh viễn tài khoản và dữ liệu đám mây của bạn. Thao tác này không thể hoàn tác.</li>
+  <li><strong>Xóa:</strong> chọn "Xóa tài khoản" tại "Trung tâm hội viên" để xóa vĩnh viễn dữ liệu tài khoản và quyền lợi hội viên/gói đăng ký của bạn (bao gồm thời hạn gói đăng ký đã mua, hạn mức sử dụng AI, v.v.). Thao tác này không thể hoàn tác.</li>
   <li><strong>Nhận bản sao dữ liệu:</strong> sử dụng tính năng "Xuất bản sao lưu" trong Ứng dụng để lấy bản sao dữ liệu hồ sơ mệnh của bạn.</li>
   <li><strong>Ngừng thu thập và sử dụng:</strong> bạn có thể ngừng sử dụng Dịch vụ và xóa tài khoản bất cứ lúc nào.</li>
 </ul>
@@ -208,4 +214,3 @@
 </div>
 </body>
 </html>
-

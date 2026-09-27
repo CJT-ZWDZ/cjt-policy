@@ -64,7 +64,7 @@
 <div class="meta">
   <strong>生效日期：</strong>2026 年 8 月 1 日<br>
   <strong>最后更新：</strong>2026 年 9 月 19 日<br>
-  <strong>适用范围：</strong>「辰玑堂」iOS 应用程序（以下称「本 App」）及其相关服务
+  <strong>适用范围：</strong>「辰玑堂」iOS 及 Android 应用程序（以下称「本 App」）及其相关服务
 </div>
 
 <p>感谢您使用辰玑堂。我们深知命理数据属于高度个人化的信息，因此在设计本 App 时即采取「数据尽量留在您的设备上」的原则。本政策说明我们收集哪些数据、如何使用、与谁分享，以及您拥有哪些权利。</p>
@@ -98,7 +98,7 @@
 <h3>1.2 系统自动收集的数据</h3>
 <ul>
   <li><strong>用户识别码（UID）：</strong>由 Firebase 于注册时自动产生，用于辨识您的账号与权益。</li>
-  <li><strong>设备识别码：</strong>Apple 提供的「供应商识别码」（identifierForVendor）与 App 自行产生之本机设备代号，用于防止服务滥用；订阅版账号另会用于实现「手机／平板各限一台设备登录」之权益保护机制（见下方说明）。此识别码在您删除 App 后即失效。</li>
+  <li><strong>设备识别码：</strong>iOS 版使用 Apple 提供的「供应商识别码」（identifierForVendor），Android 版使用系统提供的设备识别码，两者皆搭配 App 自行产生之本机设备代号，用于防止服务滥用；订阅版账号另会用于实现「手机／平板各限一台设备登录」之权益保护机制（见下方说明）。此识别码在您删除 App 后即失效。</li>
   <li><strong>使用行为分析：</strong>我们使用 Firebase Analytics 记录如登录、注册、购买、AI 功能使用、命例保存等操作事件与所属功能名称，用于了解整体使用情形、改善产品体验。<strong>此类事件不包含您的命例内容、AI 提问文字或 AI 回复全文。</strong></li>
   <li><strong>服务使用记录：</strong>AI 咨询的次数、主题分类、使用的运算量与时间戳。<strong>不包含您的提问内容与 AI 回复全文。</strong></li>
   <li><strong>购买记录：</strong>Apple 交易编号、商品代码、购买时间，用于发放与恢复您的权益。</li>
@@ -108,7 +108,7 @@
 <ul>
   <li>本 App <strong>未启用</strong>任何第三方广告或行为追踪 SDK，不会用于投放广告。</li>
   <li>我们<strong>不会</strong>收集您的通讯录、位置定位、健康数据或相册内容（相机与相册权限仅于您主动扫描或保存 QR Code 时即时使用，不会保留副本）。</li>
-  <li>Face ID／Touch ID 的生物特征数据由 iOS 系统管理，<strong>永远不会</strong>传送给我们或离开您的设备。</li>
+  <li>Face ID／Touch ID（iOS）或指纹／面容识别（Android）等生物特征数据，均由您设备的操作系统自行管理，<strong>永远不会</strong>传送给我们或离开您的设备。</li>
   <li>我们<strong>不会</strong>存储您的登录密码明文，密码由 Firebase Authentication 以加密方式管理。</li>
 </ul>
 
@@ -141,9 +141,15 @@
   </tr>
   <tr>
     <td>Apple Inc.</td>
-    <td>App 内购买、Apple 登录</td>
+    <td>App 内购买（iOS）、Apple 登录</td>
     <td>交易记录；Apple 登录者的匿名邮箱</td>
     <td>依 Apple 政策</td>
+  </tr>
+  <tr>
+    <td>Google Play</td>
+    <td>App 内购买（Android）</td>
+    <td>交易记录</td>
+    <td>依 Google 政策</td>
   </tr>
 </table>
 
@@ -169,10 +175,10 @@
 <h2>五、数据安全措施</h2>
 <ul>
   <li>所有网络传输皆采用 HTTPS／TLS 加密。</li>
-  <li>命例数据于设备端以 iOS 文件保护机制加密存储。</li>
+  <li>命例数据于设备端加密存储（iOS 采用系统文件保护机制，Android 采用 Android Keystore 为基础之加密存储机制）。</li>
   <li>导出的备份文件采用 AES-GCM 加密，<strong>需要您自行设定的密码</strong>才能解开；<span class="warn">此密码我们无从得知，遗失将无法救回，请妥善保存。</span></li>
   <li>权益与代币的变更仅能由服务器端执行，防止篡改。</li>
-  <li>登录凭证存储于 iOS 系统钥匙串（Keychain）。</li>
+  <li>登录凭证于 iOS 系统存储在钥匙串（Keychain），于 Android 系统则以加密方式存储于 Android Keystore。</li>
 </ul>
 
 <h2>六、您的权利</h2>
@@ -180,7 +186,7 @@
 <ul>
   <li><strong>查询与阅览：</strong>于 App 内「会员中心」即可查看您的账号数据与权益状态。</li>
   <li><strong>更正：</strong>显示名称可于「会员中心」自行修改。</li>
-  <li><strong>删除：</strong>于「会员中心」点选「删除账号」，即可永久移除您的账号与云端数据。此操作不可恢复。</li>
+  <li><strong>删除：</strong>于「会员中心」点选「删除账号」，即可永久移除您的账号数据与会员／订阅权益（含已购买之订阅效期、AI 使用额度等）。此操作不可恢复。</li>
   <li><strong>副本取得：</strong>可使用 App 内的「导出备份」功能取得您的命例数据。</li>
   <li><strong>停止收集与利用：</strong>您可停止使用本服务并删除账号。</li>
 </ul>
